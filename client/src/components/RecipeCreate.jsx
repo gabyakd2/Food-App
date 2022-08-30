@@ -100,7 +100,7 @@ export default function RecipeCreate (){
 
     return (
         <div className="recipePri">
-            <Link to='/home'><button>Volver</button></Link>
+            <Link to='/home'><button className="backHome">Volver</button></Link>
             <h1>¡Crea tu receta!</h1>
             <form>
                 <div>
