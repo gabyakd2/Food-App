@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+.contPri {
+    background-image: url(../css/imagenes/home-img.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.linkCard {
+    text-decoration: none;
+}
+
+.imgloading {
+    width: 370px;
+}
+
+.loading h1 {
+    color: #AB6C34;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10%;
+    padding-top: -10px;
+}
+
+h1 {
+    color: #AB6C34;
+    font-size: 45px;
+    font-family: 'Lobster', cursive;
+}
+
+select {
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.linkHome {
+    text-decoration: none;
+    color: black;
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: green;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.linkHome:hover {
+    color: blueviolet;
+    background: none;
+    border-color: aquamarine;
+}
+
+.linkHome:visited {
+    color: none;
+}
+
+.botonCargar {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: aqua;
+    color: brown;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.botonCargar:hover {
+    color: blueviolet;
+    background: none;
+    border-color: aquamarine;
+}

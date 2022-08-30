@@ -1,0 +1,42 @@
+.countainercards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px black;
+    transition: 0.3s;
+    transition: all 400ms ease;
+    height: 400px;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+    background-color: rgba(81, 6, 6, 0.2);
+}
+
+.contenido {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-shadow: black;
+}
+
+.card:hover {
+    box-shadow: 5px 5px black;
+    transform: translateY(-3%);
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.2);
+}
+
+.contenido {
+    padding: 2px 16px;
+    max-height: 150px;
+    max-width: 300px;
+}
+
+

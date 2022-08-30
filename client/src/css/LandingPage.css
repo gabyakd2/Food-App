@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+.contLan {
+    background-image: url(../css/imagenes/landing-img.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: table;
+    margin: 0;
+    top: 0;
+}
+
+.segCont {
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.terCont {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    margin-left: 900px;
+}
+
+.terCont h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 500%;
+    color: #f9f3f4;
+    text-shadow: 0 0 500px white;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    color: #dee3e5;
+    letter-spacing: 13px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.link:hover {
+    background: #351717d0;
+    box-shadow: 0 0 10px #351717d0, 0 0 40px #351717d0, 0 0 80px #351717d0;
+}
