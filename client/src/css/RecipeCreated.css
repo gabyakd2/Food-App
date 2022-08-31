@@ -16,7 +16,75 @@
     background: #fff;
    }
    
-   .backHome:hover {
+.backHome:hover {
     box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
     transform: translateY(-2px);
    }
+
+   
+.contForm {
+    background: rgba(0,0,0,.6);
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    padding: 0px 35px;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    border-radius: 19px;
+   }
+
+.form-label {
+    display: block;
+    color: #ff851b;
+    font-size: 18px;
+    position: relative;
+}
+
+.form-label label {
+    display: flex;
+    justify-content: start;
+}
+
+.input-rest{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 17px;
+    border-radius: 9px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.form-textarea {
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 17px;
+    border-radius: 9px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.btn-submit {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: -290px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-size: 25px;
+    transition: 0.2s;
+    background-color: #ff851b;
+}
+
+.btn-submit:hover {
+    background: #351717d0;
+    box-shadow: 0 0 10px #351717d0, 0 0 40px #351717d0, 0 0 80px #351717d0;
+}
