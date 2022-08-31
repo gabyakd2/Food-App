@@ -11,13 +11,17 @@
     margin: 20px;
     border: 1px solid black;
     border-radius: 8px;
-    box-shadow: 0px 1px 10px black;
+    box-shadow: 0px 3px 10px black;
     transition: 0.3s;
     transition: all 400ms ease;
     height: 400px;
     -webkit-backdrop-filter: blur(0px);
     backdrop-filter: blur(0px);
-    background-color: rgba(81, 6, 6, 0.2);
+    background-color: rgba(81, 6, 6, 0.5);
+}
+
+.card img {
+    border-radius: 8px;
 }
 
 .contenido {

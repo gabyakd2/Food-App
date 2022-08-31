@@ -85,7 +85,6 @@ export function getRecipeByParams(id){
 }
 
 
-
 export function cleanDetail(){
     return{
         type: 'CLEAN_DETAIL'

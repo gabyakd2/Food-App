@@ -46,6 +46,7 @@ export default function Home (){
             dispatch(getRecipes())
         }else{
             dispatch(filterByDiet(e.target.value))
+            setCurrentPage(1)
         }
     }
 
@@ -88,26 +89,30 @@ export default function Home (){
                     <option value='asc'> A - Z </option>
                     <option value='desc'> Z - A </option>
                 </select>
+
                 <select onChange={e => handleFilterByDiet(e)}>
                     <option value='all'> Todas las dietas </option>
                     {
-                        allDiet.map(dieta =>{
+                        allDiet.map((dieta, i) =>{
                             return (
-                                <option key={dieta}>{dieta}</option>
+                                <option key={i}>{dieta}</option>
                                 )
                             })
                         }
                 </select>
+
                 <select onChange={e => handleOrderByScore(e)}>
                     <option value='all'>Todos los puntos</option>
                     <option value='asc'>Mas saludable</option>
                     <option value='desc'>Menos saludable</option>
                 </select>
+
             <Paginado 
                 recipePerPage={recipePerPage}
                 allRecipe={allRecipe.length}
                 paginated={paginated}
             />
+            
                 <div className='countainercards'>
                     {
                         currentRecipe.length > 0  ? currentRecipe.map( r => {

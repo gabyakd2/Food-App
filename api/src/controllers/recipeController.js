@@ -65,7 +65,14 @@ const getRecipeByQuery = async (req, res) => {
     const { name } = req.query;
     const getRecipes = await getInfoTotal()
     if(name){
-        let recipesFiltered = getRecipes.filter(r => r.name.toLowerCase() == name.toLowerCase())
+        let recipesFiltered = []
+        getRecipes.map(el => {
+            let boolean = el.name.toLowerCase().includes(name.toLowerCase())
+            if(boolean === true){
+                recipesFiltered.push(el)
+            }
+        })
+        //console.log(recipesFiltered, 'seba')
         recipesFiltered.length ? res.status(200).send(recipesFiltered) : res.status(404).send('No se encontro la receta!')
     }else{
         return res.status(200).send(getRecipes)
@@ -106,6 +113,9 @@ const recipePost = async (req, res) => {
         res.status(404).send('Error')
     }
 }
+
+
+
 module.exports = {
     getInfoTotal,
     getRecipeByQuery,
