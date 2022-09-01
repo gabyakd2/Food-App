@@ -19,7 +19,7 @@ function rootReducer (state = initialState, action) {
         case 'FILTER_BY_DIET':
             const allRecipe = state.allRecipe.map(r => ({
                 id: r.id,
-                name: r.title,
+                name: r.name,
                 image: r.image,
                 summary: r.summary,
                 healthScore: r.healthScore,

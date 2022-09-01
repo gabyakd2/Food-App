@@ -88,3 +88,11 @@
     background: #351717d0;
     box-shadow: 0 0 10px #351717d0, 0 0 40px #351717d0, 0 0 80px #351717d0;
 }
+
+.listaDieta{
+    color: white;
+}
+
+.dietBoton{
+    background: black;
+}

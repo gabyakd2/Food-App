@@ -21,7 +21,7 @@ function SearchBar ({setCurrentPage}){
         setName('')
         setCurrentPage(1)
       }else{
-        alert('Receta no encontrada!')
+        alert('Ingrese un nombre!')
       }
       }
 

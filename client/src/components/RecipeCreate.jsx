@@ -186,24 +186,26 @@ export default function RecipeCreate (){
                             })
                         }
                     </select>
-                    {
-                        input.diet.map( d => (
-                            <div>
-                                <p>
-                                    <button 
-                                        value={d}
-                                        onClick={() => handleDelete(d)}
-                                        >
-                                            X
-                                    </button>
-                                </p>
-                            </div>
-                        ))
-                    }
-                    {errors.diet && (
-                            <p>{errors.diet}</p>
-                        )}
-                    <ul><li>{input.diet.map( d => d + ' ,' )}</li></ul>
+                    <div className="dietBoton">
+                        {
+                            input.diet.map( d => (
+                                <div>
+                                    <p>
+                                        <button 
+                                            value={d}
+                                            onClick={() => handleDelete(d)}
+                                            >
+                                                X
+                                        </button>
+                                    </p>
+                                </div>
+                            ))
+                        }
+                        {errors.diet && (
+                                <p>{errors.diet}</p>
+                            )}
+                        <ul><li className="listaDieta">{input.diet.map( d => d + ' ,' )}</li></ul>
+                    </div>
                 </form>
             </div>
                     <button className='btn-submit' type="submit" onClick={(e) => handleAlert(e)}>Crear Receta</button>

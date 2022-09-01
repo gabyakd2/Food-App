@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { getRecipeByQuery, getRecipeByParams, recipePost, filterHs } = require('../controllers/recipeController')
+const { getRecipeByQuery, getRecipeByParams, recipePost } = require('../controllers/recipeController')
 const { getApiInfoDiet } = require('../controllers/dietController')
 
 // Importar todos los routers;
@@ -17,6 +17,5 @@ router.get('/recipes/:id', getRecipeByParams);
 router.get('/diets', getApiInfoDiet)
 
 router.post('/recipes', recipePost);
-
 
 module.exports = router;
