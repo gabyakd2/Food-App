@@ -59,10 +59,12 @@ export default function RecipeCreate (){
 
     //console.log(input)
     function handleSelectDiet (e){
-        setInput({
-            ...input,
-            diet: [...input.diet, e.target.value]
-        })
+        if(!input.diet.includes(e.target.value)){
+            setInput({
+                ...input,
+                diet: [...input.diet, e.target.value]
+            })
+        }
     }
 
 
