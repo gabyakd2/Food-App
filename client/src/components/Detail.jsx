@@ -35,12 +35,12 @@ export default function Detail({id}){
                     </div>
                     <h4>Nivel de comida saludable: {recipe[0].healthScore}</h4>
                     <h4>
-                        Paso a paso: { !recipe[0].steps ? 'Formula secreta, no se puede mostrar' : recipe[0].steps.length > 1 ? recipe[0].steps.map(p => {
+                        Paso a paso: { !recipe[0].steps ? 'Formula secreta, no se puede mostrar'
+                         : recipe[0].steps.length > 1 ? recipe[0].steps.map((p, i) => {
                             return(
-                                <li>{p.number}: {p.step}</li>
+                                <li key={i}>{p.number}: {p.step}</li>
                             )
                         }) : recipe[0].steps[0] }
-                        {/* { console.log('NICOOOOOOOO',recipe[0])} */}
                     </h4>
                     <h4>Dietas del plato: {recipe[0].types ? recipe[0].types.map( d => d ) : recipe[0].diets.map(e => e.name + ', ')}</h4>
                 </div> : (

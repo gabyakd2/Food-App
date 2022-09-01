@@ -30,6 +30,7 @@
     font-size: 500%;
     color: #f9f3f4;
     text-shadow: 0 0 500px white;
+    text-shadow: 5px 5px black;
 }
 
 .link {
@@ -43,6 +44,7 @@
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
+    text-shadow: 3px 3px black;
 }
 
 .link:hover {

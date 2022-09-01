@@ -83,35 +83,37 @@ export default function Home (){
             </div>
 
             <div>
-                <h2>Filtrar Recetas</h2>
-                <select onChange={e => handleOrderByName(e)}>
-                    <option value='all'>Todos sin orden</option>
-                    <option value='asc'> A - Z </option>
-                    <option value='desc'> Z - A </option>
-                </select>
+                <h2 className='filtarRecetas'>Filtrar Recetas</h2>
+                <div className='contSelects'>
+                    <select className='selects' onChange={e => handleOrderByName(e)}>
+                        <option value='all'>Todos sin orden</option>
+                        <option value='asc'> A - Z </option>
+                        <option value='desc'> Z - A </option>
+                    </select>
 
-                <select onChange={e => handleFilterByDiet(e)}>
-                    <option value='all'> Todas las dietas </option>
-                    {
-                        allDiet.map((dieta, i) =>{
-                            return (
-                                <option key={i}>{dieta}</option>
-                                )
-                            })
-                        }
-                </select>
+                    <select className='selects' onChange={e => handleFilterByDiet(e)}>
+                        <option value='all'> Todas las dietas </option>
+                        {
+                            allDiet.map((dieta, i) =>{
+                                return (
+                                    <option key={i}>{dieta}</option>
+                                    )
+                                })
+                            }
+                    </select>
 
-                <select onChange={e => handleOrderByScore(e)}>
-                    <option value='all'>Todos los puntos</option>
-                    <option value='asc'>Mas saludable</option>
-                    <option value='desc'>Menos saludable</option>
-                </select>
+                    <select className='selects' onChange={e => handleOrderByScore(e)}>
+                        <option value='all'>Todos los puntos</option>
+                        <option value='asc'>Mas saludable</option>
+                        <option value='desc'>Menos saludable</option>
+                    </select>
+                </div>
 
-            <Paginado 
-                recipePerPage={recipePerPage}
-                allRecipe={allRecipe.length}
-                paginated={paginated}
-            />
+                <Paginado 
+                    recipePerPage={recipePerPage}
+                    allRecipe={allRecipe.length}
+                    paginated={paginated}
+                />
             
                 <div className='countainercards'>
                     {

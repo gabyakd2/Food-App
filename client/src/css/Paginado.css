@@ -1,0 +1,28 @@
+.paginado {
+    margin-top: 35px;
+}
+
+.ulPaginado {
+    list-style: none;
+    text-align: center;
+}
+
+.numeroPaginado {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    background: #413a22;
+    border: #fff solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition: all 400ms ease;
+}
+
+.numeroPaginado:hover {
+    color: black;
+    background: #b8c58f;
+    border-color: black;
+    transform: translateY(-20%);
+}

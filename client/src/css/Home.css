@@ -32,6 +32,7 @@ h1 {
     color: #AB6C34;
     font-size: 45px;
     font-family: 'Lobster', cursive;
+    text-shadow: 3px 3px black;
 }
 
 select {
@@ -45,16 +46,18 @@ select {
     border: 2px solid gray;
     padding: 5px;
     border-radius: 6px;
-    background-color: green;
-    transition: all 0.3s ease;
+    background-color: #738F14;
+    transition: 0.3s;
+    transition: all 400ms ease;
     font-size: 16px;
     font-weight: bold;
 }
 
 .linkHome:hover {
-    color: blueviolet;
-    background: none;
-    border-color: aquamarine;
+    color: black;
+    background: #b8c58f;
+    border-color: black;
+    transform: translateY(-20%);
 }
 
 .linkHome:visited {
@@ -64,16 +67,55 @@ select {
 .botonCargar {
     cursor: pointer;
     padding: 5px;
-    border-radius: 3px;
-    background-color: aqua;
-    color: brown;
-    transition: all 0.3s ease;
+    border-radius: 6px;
+    border: 2px solid gray;
+    background-color: #738F14;
+    color: black;
+    transition: 0.3s;
+    transition: all 400ms ease;
     font-size: 14px;
     font-weight: bold;
 }
 
 .botonCargar:hover {
-    color: blueviolet;
-    background: none;
-    border-color: aquamarine;
+    color: black;
+    background: #b8c58f;
+    border-color: black;
+    transform: translateY(-20%);
 }
+
+.contSelects {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.selects {
+    width: 15%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    min-height: 35px;
+    background: #ccc0af;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid #743D2D;
+    outline: none;
+    padding: 0px 10px;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+    background-color: rgba(9, 154, 106, 0.34);
+}
+
+.filtarRecetas {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    color: #AB6C34;
+    font-size: 35px;
+    text-shadow: 3px 2px black;
+}
+
+
+
+
