@@ -188,25 +188,25 @@ export default function RecipeCreate (){
                             })
                         }
                     </select>
-                    <div className="dietBoton">
+                    <div className="contdietaeleg">
                         {
                             input.diet.map( d => (
-                                <div>
-                                    <p>
+                                <div className="dietBoton">
+                                    <p className="dietaelegida">{d}</p>
+                                    <br />
                                         <button 
+                                            className="botonx"
                                             value={d}
                                             onClick={() => handleDelete(d)}
                                             >
                                                 X
                                         </button>
-                                    </p>
                                 </div>
                             ))
                         }
                         {errors.diet && (
                                 <p>{errors.diet}</p>
                             )}
-                        <ul><li className="listaDieta">{input.diet.map( d => d + ' ,' )}</li></ul>
                     </div>
                 </form>
             </div>

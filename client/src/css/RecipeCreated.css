@@ -94,5 +94,45 @@
 }
 
 .dietBoton{
-    background: black;
+    background: #ff851b;
+    display: flex;
+    justify-content: center;
+}
+
+.contdietaeleg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dietaelegida {
+    color: white;
+}
+
+.botonx {
+    color: #9e2a2b;
+	border-color: #9e2a2b;
+	background: none;
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 4px;
+	justify-content: center;
+	margin-top: 5px;
+	transition: all 0.3s ease;
+}
+
+.botonx:hover {
+    background: #9e2a2b;
+	color: #ffffff;
+}
+
+.dietaelegida {
+    margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-right: 5px;
+	margin-top: 5px;
 }

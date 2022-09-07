@@ -1,0 +1,19 @@
+.contPriDetail {
+    background-image: url(https://img.freepik.com/foto-gratis/ensalada-tomate-microgreens-mixtos-queso-camembert_2829-4817.jpg?w=1060&t=st=1662578221~exp=1662578821~hmac=eb23df27551b12297f78519899ed1acfbc26bad4aef9d5928d3493843a9cf0d8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.containercarddetail {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px black;
+    height: 950px;
+    background-color: rgba(81, 6, 6, 0.5);
+}
